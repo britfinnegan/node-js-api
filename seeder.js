@@ -13,8 +13,7 @@ const User = require('./models/User')
 const Review = require('./models/Review')
 
 // Connect to DB
-mongoose.connect(process.env.MONGO_URI, { 
-})
+mongoose.connect(process.env.MONGO_URI, { })
 
 // Read JSON files
 const bootcamps = JSON.parse(fs.readFileSync(`${__dirname}/_data/bootcamps.json`, 'utf-8'))
